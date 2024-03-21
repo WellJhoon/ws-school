@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/student', pathMatch: 'full' },
+  { path: '', redirectTo: '/users', pathMatch: 'full' },
   {
     path: '',
     loadChildren: () =>
-      import('./features/students/students.module').then(
-        (m) => m.StudentsModule
-      ),
+      import('./features/users/users.module').then((m) => m.UsersModule),
   },
 ];
 

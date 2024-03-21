@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-list-students',
-  templateUrl: './list-students.component.html',
-  styleUrls: ['./list-students.component.scss'],
+  selector: 'app-list-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.scss'],
 })
-export class ListStudentsComponent {
+export class ListUsersComponent {
   users = [
     {
       id: 1,
@@ -29,6 +29,4 @@ export class ListStudentsComponent {
       roleId: 3,
     },
   ];
-
-  
 }
